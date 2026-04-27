@@ -1,0 +1,366 @@
+body {
+        margin: 0;
+        background-color: #f7f4ee;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:rgb(78, 33, 11);
+        padding: 0;
+        
+    }
+
+#header{
+/* header ثابت */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e6dfd2; 
+    color: rgb(78, 33, 11);
+    margin-bottom: 15px;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo {
+   display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* اللوجو بشكل دائري */
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hlist ul {
+    display: flex;
+    gap: 20px;
+    background-color: #e6dfd2;
+    margin-left: 50px;
+}
+
+.hlist ul li{
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    color: rgb(78, 33, 11);
+}
+
+.hlist a{
+    text-decoration: none;
+    color:rgb(78, 33, 11);
+}
+
+.hlist a:hover{
+    color:rgb(132, 98, 81);
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(78, 33, 11);
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 180px;
+    background-color: #e6dfd2;
+}
+
+.search button {
+    border: none;
+    background-color: rgb(78, 33, 11);
+    color: #e6dfd2;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+.search button:hover {
+    background-color: rgb(132, 98, 81);
+}
+
+#hright i{
+    margin: 15px;
+    color: rgb(78, 33, 11);
+}
+
+#hright i:hover{
+    color:rgb(132, 98, 81);
+}
+
+#hright {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.Landing-Page {
+    background-color: #f7f4ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 60vh;
+}
+
+#welcome{
+    font-size: 30px;
+}
+
+.landing-page-image-container img{
+        border-radius: 20px;
+
+
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.categories button{
+    background-color: #e6dfd2;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #572b0c ;
+}
+
+.categories button a{
+    color: #572b0c;
+    text-decoration: none;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.categories button:hover {
+    background-color:rgb(137, 103, 86) ;
+}
+
+.categories button:hover a{
+     color: #e6dfd2;
+}
+
+.trending{
+padding: 10px 50px;
+}
+
+.trending span{
+    color: rgb(78, 33, 11);
+    text-transform: uppercase;
+    font-size: 14px;   
+}
+
+.Best-selling{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#best-selling{
+    margin-left: 190px;
+}
+
+.Best-selling h1{
+
+    margin-top: 0;
+}
+
+.Trending-perfumes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.Trending-perfumes i{
+    color: rgb(78, 33, 11);
+}
+
+.perfumes {
+    width: 300px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.perfumes:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+.perfumes > img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.perfume-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f3e9;
+}
+
+
+.perfume-info a img {
+    width: 24px;
+    height: 24px;
+}
+
+.offers-section {
+    background-color: #e5e5da;
+    padding: 50px 5%;
+    margin-top: 40px;
+    background-color: #f7f4ee;
+}
+
+.offers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.offer-card {
+    background-color: #f4f1e9;
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.offer-card img {
+    width: 100%;
+    display: block;
+}
+
+.offer-info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer-details p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.offer-details h3 {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+}
+
+.cart-icon {
+    width: 20px !important;
+    height: auto;
+}
+/* تأثير الترانزشن على كروت البرفانات */
+.perfumes {
+    background-color: #f9f9f4; /* لون فاتح شوية للكارت عشان يبرز عن الخلفية */
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.4s ease-in-out; /* مدة الترانزشن */
+    cursor: pointer;
+}
+
+/* الترانزشن لما الماوس ييجي على الكارت */
+.perfumes:hover {
+    transform: translateY(-10px); /* الكارت يترفع لفوق */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* ظل خفيف بيظهر مع الرفعة */
+}
+
+/* ترانزشن للصورة نفسها جوه الكارت */
+.perfumes img {
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.perfumes:hover img {
+    transform: scale(1.02); /* زووم بسيط جداً للصورة */
+}
+
+/* footer  */
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #e6dfd2;
+    color: rgb(78, 33, 11);
+}
+
+#fleft{
+    display: flex;
+    gap: 15px;
+}
+
+#fleft i{
+    font-size: 30px;
+    color: rgb(78, 33, 11);
+}
+
+#fleft i:hover{
+    color:rgb(137, 103, 86)  ;
+}
+
+#fcenter{
+    text-align: center;
+}
+
+#fright{
+    text-align: center;
+}
+
+#fright p:hover,i:hover{
+    color:rgb(137, 103, 86)
+}
+
+#fright a{
+    text-decoration: none;
+    color: rgb(78, 33, 11);
+}
+/* font للارقام  */
+#tele{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

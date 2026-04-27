@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabian Collection</title>
+
+    <link rel="stylesheet" href="arabian.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+
+<body>
+<header id="header">
+    <div class="logo">
+        <img src="Logo.jpeg">
+    </div>
+
+    <div class="hlist">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About-us.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div id="hright">
+        <form class="search">
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping icon"></i></a>
+        <a href="sign.html"><i class="fa-solid fa-user icon"></i></a>
+    </div>
+</header>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<!-- Hero -->
+<section class="heroarabian">
+    <div class="hero-content">
+        <h1>Arabian Collection</h1>
+        <p>Authentic oriental fragrances inspired by Arabian heritage.</p>
+    </div>
+</section>
+<section class="categories">
+    <button><a href="all.html">All</a></button>
+    <button><a href="men.html">Men</a></button>
+    <button><a href="women.html">Women</a></button>
+    <button><a href="arabian.html">Arabian</a></button>
+</section>
+<!-- Products -->
+<section class="grid">
+    <div class="card" oncmouseenter="toggleDetails(this)">
+        <img src="اوركيد.jpeg">
+        <div class="card-content">
+            <h3>Orchid Oud</h3>
+            <p class="price">$150</p>
+        </div>
+        <div class="details">
+            <p>Rich oriental fragrance with deep oud and floral elegance.</p>
+            <div class="notes">
+                Top: Saffron<br>
+                Middle: Orchid<br>
+                Base: Oud & Amber
+            </div>
+            <button onclick="addToCart('Orchid Oud', 150)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="اميري.jpeg">
+        <div class="card-content">
+            <h3>Amiri Gold</h3>
+            <p class="price">$170</p>
+        </div>
+        <div class="details">
+            <p>Luxury golden scent inspired by Arabian royalty.</p>
+            <div class="notes">
+                Top: Saffron<br>
+                Middle: Oud<br>
+                Base: Tonka Bean
+            </div>
+            <button onclick="addToCart('Amiri Gold', 170)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="ليال.jpeg">
+        <div class="card-content">
+            <h3>Layal Essence</h3>
+            <p class="price">$140</p>
+        </div>
+        <div class="details">
+            <p>Soft night fragrance with smooth oriental warmth.</p>
+            <div class="notes">
+                Top: Rose<br>
+                Middle: Vanilla<br>
+                Base: Sandalwood
+            </div>
+            <button onclick="addToCart('Layal Essence', 140)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="عنبر و ورد.jpeg">
+        <div class="card-content">
+            <h3>Amber Wood</h3>
+            <p class="price">$160</p>
+        </div>
+        <div class="details">
+            <p>Deep woody fragrance with warm amber richness.</p>
+            <div class="notes">
+                Top: Spices<br>
+                Middle: Amber<br>
+                Base: Cedarwood
+            </div>
+            <button onclick="addToCart('Amber Wood', 160)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="السيف.jpeg">
+        <div class="card-content">
+            <h3>Arabian Pride</h3>
+            <p class="price">$180</p>
+        </div>
+        <div class="details">
+            <p>Strong signature scent with bold oriental identity.</p>
+            <div class="notes">
+                Top: Leather<br>
+                Middle: Oud<br>
+                Base: Patchouli
+            </div>
+            <button onclick="addToCart('Arabian Pride', 180)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="فخر.jpeg">
+        <div class="card-content">
+            <h3>Royal Oud</h3>
+            <p class="price">$190</p>
+        </div>
+        <div class="details">
+            <p>Premium oud fragrance with luxurious intensity.</p>
+            <div class="notes">
+                Top: Incense<br>
+                Middle: Oud<br>
+                Base: Musk & Amber
+            </div>
+            <button onclick="addToCart('Royal Oud', 190)">Add to Cart</button>
+        </div>
+    </div>
+
+</section>
+<footer id="footer">
+    <div id="fleft">
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.tiktok.com/explore" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+    </div>
+    <div id="fcenter">
+        <p>© 2026 SCENTRA. All Rights Reserved.</p>
+    </div>
+    <div id="fright">
+        <a href="https://maps.google.com"><P><i class="fa-solid fa-location-dot"></i> Egypt ,cairo ,towndown</P></a>
+        <a href="https://mail.google.com"><p><i class="fa-solid fa-envelope"></i> SENTRA@gmail.com</p></a>
+        <p id="tele"> <i class="fa-solid fa-phone"></i>+20 01058976431</p>
+    </div>
+</footer>
+<script src="Js.js"></script>
+</body>
+</html>

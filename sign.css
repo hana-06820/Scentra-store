@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+
+  section
+  {
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background:url(sign.jpeg);
+   background-size: cover;
+   overflow: hidden;
+   background-position: center;
+   
+  }
+ 
+ .form-container
+ {
+    position: relative;
+    width: 400px;
+    height:450px;
+      background-color: rgb(153, 120, 92);
+    border:3x  solid rgb(255, 255, 255,.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    backdrop-filter:blur(30px) ;
+ }
+
+ /* .signup-box
+ {
+   
+ 
+    position: relative;
+    width: 400px;
+    height:450px;
+    background:transparent;
+    border:2px  solid rgb(255, 255, 255,.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter:blur(15px) ;
+ 
+ } */
+
+ h1
+ {
+    font-size: 2em;
+    color: rgb(99, 43, 15);
+    text-align: center;
+ }
+
+ .input-box
+ {
+    position: relative;
+    width:310px;
+    margin:30px;
+    border-bottom: 2px solid #fff;
+   ;
+ }
+
+ .input-box label
+ {
+    position: absolute;
+    top:50%;
+    left: 5px;
+    transform:translateY(-50%);
+    font-size: 1.2em;
+    color: rgb(99, 43, 15);
+    pointer-events: none;
+    transition: .5s;
+  
+ }
+
+  .input-box input:focus~label,
+  .input-box input:valid~label
+  {
+    top: -5px;
+  }
+
+ .input-box input
+ {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size:1.2em ;
+    color: #fff;
+    padding: 0 35px 0 5px;
+ }
+
+ .input-box .icon
+ {
+    position: absolute;
+    right:8px ;
+    font-size: 1.2em;
+    line-height: 57px;
+ }
+
+ .remember-forgot
+ {
+   margin: -15px 0 15px;
+   font-size: .9em;
+   color: rgb(99, 43, 15);
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .remember-forgot label input
+ {
+   margin-right: 3px;
+   color:rgb(99, 43, 15) ;
+ }
+
+ .remember-forgot a
+ {
+   color:rgb(99, 43, 15);
+   text-decoration: none;
+ }
+
+ .remember-forgot a:hover
+ {
+   text-decoration: underline;
+ }
+
+  button
+  {
+   width: 100%;
+   height: 40px;
+   background: rgba(225, 212, 190, 1);
+   border:none;
+   outline:none;
+   border-radius: 40px;
+   cursor: pointer;
+   font-size: 1.3em;
+   color:rgb(99, 43, 15) ;
+   font-weight: 500;
+  }
+
+  .register-link
+  {
+   font-size:.9em;
+   color:rgb(99, 43, 15);
+   text-align: center;
+
+   margin: 25px 0 10px;
+
+  }
+
+  .register-link p a
+  {
+   color: rgb(99, 43, 15);
+   text-decoration: none;
+   font-weight: 600;
+  }
+
+  .register-link p a:hover
+  {
+   text-decoration: underline;
+  }
+
+  /* POPUP MESSAGE */
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    width: 320px;
+    background: rgba(225,212,190,0.95);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: 0.4s ease;
+}
+
+.popup.show{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup p{
+    color: rgb(99,43,15);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.popup button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background: rgb(99,43,15);
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.popup button:hover{
+    opacity: .9;
+}
+
+}

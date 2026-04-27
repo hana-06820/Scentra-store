@@ -1,0 +1,113 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Scentra</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+
+<body>
+
+<section>
+<div class="form-container">
+
+    <!-- LOGIN -->
+    <form id="login-form" autocomplete="off" onsubmit="loginUser(event)">
+        <h1>Login</h1>
+
+        <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" id="login-email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" id="login-pass" required>
+            <label>Password</label>
+        </div>
+
+        <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#" onclick="showForgot()">Forgot Password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <div class="register-link">
+            <p>Don't have an account?
+                <a href="#" onclick="showRegister()">Register</a>
+            </p>
+        </div>
+    </form>
+
+    <!-- REGISTER -->
+    <form id="register-form" style="display:none;" onsubmit="registerUser(event)">
+        <h1>Create Account</h1>
+
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" id="reg-name" required>
+            <label>Name</label>
+        </div>
+
+        <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" id="reg-email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" id="reg-pass" required>
+            <label>Password</label>
+        </div>
+
+        <button type="submit">Sign Up</button>
+
+        <div class="register-link">
+            <p>Already have an account?
+                <a href="#" onclick="showLogin()">Login</a>
+            </p>
+        </div>
+    </form>
+
+    <!-- FORGOT PASSWORD -->
+    <form id="forgot-form" style="display:none;" onsubmit="validateReset(event)">
+        <h1>Reset Password</h1>
+
+        <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" id="reset-email" required>
+            <label>Enter your email</label>
+        </div>
+
+        <button type="submit">Send Reset Link</button>
+
+        <div class="register-link">
+            <p>
+                Remember your password?
+                <a href="#" onclick="showLogin()">Login</a>
+            </p>
+        </div>
+    </form>
+
+</div>
+</section>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">OK</button>
+</div>
+
+<!-- ICONS -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- JS FILE -->
+<script src="sign.js"></script>
+
+</body>
+</html>

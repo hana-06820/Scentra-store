@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scentra - Check out</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!-- header -->
+        <header id="header">
+                   <div class="logo">
+            <img src="Logo.jpeg">
+        </div>
+
+        <div class="hlist">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About-us.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div id="hright">
+             <form class="search">
+                <input type="text" placeholder="Search">
+                <button type="submit">Search</button>
+            </form>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping icon"></i></a>
+            <a href="sign.html"><i class="fa-solid fa-user icon"></i></a>
+        </div>   
+        </header>
+        
+        <br><br><br><br><br><br><br>
+
+    <div class="container">
+        <h2 class="main-title">Check Out</h2>
+        
+        <form action="#">
+            <section class="billing-details">
+                <h3 class="section-title">Billing Details</h3>
+                
+                <div class="row">
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Street Address</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Town / City</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Country</label>
+                    <select required>
+                         <option value="" disabled selected hidden>Choose Country</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="saudi">The Saudi Arabia</option>
+                        <option value="uae">The Emirates</option>
+                        <option value="kuwait">Kuwait</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone</label>
+                    <input type="tel" placeholder="01XXXXXXXXX" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="user@gmail.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Order Notes (Optional)</label>
+                    <textarea rows="4"></textarea>
+                </div>
+            </section>
+
+            <section class="payment-methods">
+                <h3 class="section-title">Payment</h3>
+                
+                <div class="payment-option">
+                    <input type="radio" id="online" name="payment_method" required>
+                    <label for="online">Online Payment</label>
+                    
+                    <div class="sub-options">
+                        <input type="radio" id="visa" name="online_type">
+                        <label for="visa">Visa</label>
+                        
+                        <input type="radio" id="vodafone" name="online_type">
+                        <label for="vodafone">Vodafone Cash</label>
+                    </div>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="cash" name="payment_method" required>
+                    <label for="cash">Cash on Delivery</label>
+                </div>
+
+                <button type="submit" class="place-order-btn">PLACE ORDER</button>
+            </section>
+        </form>
+    </div>
+<!-- footer -->
+        <footer id="footer">
+            <div id="fleft">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                     <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.tiktok.com/explore" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+            <div id="fcenter">
+                <p>© 2026 SCENTRA. All Rights Reserved.</p>
+            </div>
+            <div id="fright">
+                <a href="https://maps.google.com"><P><i class="fa-solid fa-location-dot"></i> Egypt ,cairo ,towndown</P></a>
+                <a href="https://mail.google.com"><p><i class="fa-solid fa-envelope"></i> SENTRA@gmail.com</p></a>
+                <p id="tele"> <i class="fa-solid fa-phone"></i>+20 01058976431</p>
+            </div>
+        </footer>
+<script src="payment.js"></script>
+</body>
+</html>

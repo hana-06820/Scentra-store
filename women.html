@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--laptop,mobile phone-->
+    <title>Women Collection</title>
+    <link rel="stylesheet" href="women.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header id="header">
+    <div class="logo">
+        <img src="Logo.jpeg">
+    </div>
+
+    <div class="hlist">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About-us.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div id="hright">
+        <form class="search">
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping icon"></i></a>
+        <a href="sign.html"><i class="fa-solid fa-user icon"></i></a>
+    </div>
+</header>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<section class="herowomen">
+    <div class="hero-content">
+        <h1>Women Collection</h1>
+        <p>Elegant fragrances crafted for timeless beauty and feminine charm.</p>
+    </div>
+</section>
+
+<section class="categories">  <!--buttons-->
+    <button><a href="all.html">All</a></button>
+    <button><a href="men.html">Men</a></button>
+    <button><a href="women.html">Women</a></button>
+    <button><a href="arabian.html">Arabian</a></button>
+</section>
+
+<section class="grid">
+    <div class="card" onclick="toggleDetails(this)" data-category="women">
+        <img src="black opium.jpeg">
+        <div class="card-content">
+            <h3>Nocturne Femme</h3>
+            <p class="price">$130</p>
+        </div>
+        <div class="details">
+            <p>Elegant night fragrance with deep feminine warmth.</p>
+            <div class="notes">
+                Top: Blackcurrant<br>
+                Middle: Rose<br>
+                Base: Vanilla & Oud
+            </div>
+            <button onclick="addToCart('Nocturne Femme', 130)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)" data-category="women">
+        <img src="delina exclusif.jpeg">
+        <div class="card-content">
+            <h3>Delina Rose</h3>
+            <p class="price">$120</p>
+        </div>
+        <div class="details">
+            <p>Soft romantic floral scent for everyday elegance.</p>
+            <div class="notes">
+                Top: Lychee<br>
+                Middle: Turkish Rose<br>
+                Base: Musk
+            </div>
+            <button onclick="addToCart('Delina Rose', 120)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)" data-category="women">
+        <img src="flowers.jpeg">
+        <div class="card-content">
+            <h3>Blush Flowers</h3>
+            <p class="price">$95</p>
+        </div>
+        <div class="details">
+            <p>Fresh floral fragrance with a light feminine touch.</p>
+            <div class="notes">
+                Top: Peony<br>
+                Middle: Jasmine<br>
+                Base: White Musk
+            </div>
+            <button onclick="addToCart('Blush Flowers', 95)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)" data-category="women">
+        <img src="good girl.jpeg">
+        <div class="card-content">
+            <h3>Ocean Bloom</h3>
+            <p class="price">$100</p>
+        </div>
+        <div class="details">
+            <p>Fresh aquatic floral blend inspired by ocean breeze.</p>
+            <div class="notes">
+                Top: Lemon<br>
+                Middle: Marine Notes<br>
+                Base: Musk
+            </div>
+            <button onclick="addToCart('Ocean Bloom', 100)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)" data-category="women">
+        <img src="mademoiselle.jpeg">
+        <div class="card-content">
+            <h3>Golden Armaf</h3>
+            <p class="price">$140</p>
+        </div>
+        <div class="details">
+            <p>Luxury rich fragrance with golden warm notes.</p>
+            <div class="notes">
+                Top: Saffron<br>
+                Middle: Amber<br>
+                Base: Oud
+            </div>
+            <button onclick="addToCart('Golden Armaf', 140)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)" data-category="women">
+        <img src="french bloom.jpeg">
+        <div class="card-content">
+            <h3>French Bloom</h3>
+            <p class="price">$135</p>
+        </div>
+        <div class="details">
+            <p>Soft powdery floral scent with luxury elegance.</p>
+            <div class="notes">
+                Top: Iris<br>
+                Middle: Violet<br>
+                Base: Powder Musk
+            </div>
+            <button onclick="addToCart('French Bloom', 135)">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div id="fleft">
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://web.whatsapp.com/" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://www.tiktok.com/explore" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+    </div>
+    <div id="fcenter">
+        <p>© 2026 SCENTRA. All Rights Reserved.</p>
+    </div>
+    <div id="fright">
+        <a href="https://maps.google.com"><P><i class="fa-solid fa-location-dot"></i> Egypt ,cairo ,towndown</P></a>
+        <a href="https://mail.google.com"><p><i class="fa-solid fa-envelope"></i> SENTRA@gmail.com</p></a>
+        <p id="tele"> <i class="fa-solid fa-phone"></i>+20 01058976431</p>
+    </div>
+</footer>
+
+<script src="Js.js"></script> <!--javascript page-->
+
+</body>
+</html>

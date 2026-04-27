@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men Collection</title>
+
+    <link rel="stylesheet" href="men.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+
+<body>
+<header id="header">
+    <div class="logo">
+        <img src="Logo.jpeg">
+    </div>
+
+    <div class="hlist">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About-us.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div id="hright">
+        <form class="search">
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping icon"></i></a>
+        <a href="sign.html"><i class="fa-solid fa-user icon"></i></a>
+    </div>
+</header>
+<br><br><br><br><br><br><br><br><br><br>
+<section class="heromen">
+    <div class="hero-content">
+        <h1>Men Collection</h1>
+        <p>Bold fragrances crafted for confidence and strength.</p>
+    </div>
+</section>
+<section class="categories">
+    <button><a href="all.html">All</a></button>
+    <button><a href="men.html">Men</a></button>
+    <button><a href="women.html">Women</a></button>
+    <button><a href="arabian.html">Arabian</a></button>
+</section>
+
+<section class="grid">
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="aurora blue.jpeg">
+        <div class="card-content">
+            <h3>Ocean Aura</h3>
+            <p class="price">$85</p>
+        </div>
+        <div class="details">
+            <p>Fresh aquatic fragrance with a calm and elegant vibe.</p>
+            <div class="notes">
+                Top: Bergamot<br>
+                Middle: Marine Notes<br>
+                Base: Musk
+            </div>
+            <button onclick="addToCart('Ocean Aura', 85)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="echo.jpeg">
+        <div class="card-content">
+            <h3>Blue Echo</h3>
+            <p class="price">$90</p>
+        </div>
+        <div class="details">
+            <p>Deep and modern scent with a bold personality.</p>
+            <div class="notes">
+                Top: Citrus<br>
+                Middle: Lavender<br>
+                Base: Amber
+            </div>
+            <button onclick="addToCart('Blue Echo', 90)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="aurora.jpeg">
+        <div class="card-content">
+            <h3>Vanilla Gold</h3>
+            <p class="price">$75</p>
+        </div>
+        <div class="details">
+            <p>Warm sweet scent with soft elegance.</p>
+            <div class="notes">
+                Top: Vanilla<br>
+                Middle: Caramel<br>
+                Base: Tonka Bean
+            </div>
+            <button onclick="addToCart('Vanilla Gold', 75)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="azzaro.jpeg">
+        <div class="card-content">
+            <h3>Amber Night</h3>
+            <p class="price">$90</p>
+        </div>
+        <div class="details">
+            <p>Strong evening fragrance with deep amber.</p>
+            <div class="notes">
+                Top: Citrus<br>
+                Middle: Amber<br>
+                Base: Wood
+            </div>
+            <button onclick="addToCart('Amber Night', 90)">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="armaf.jpeg">
+        <div class="card-content">
+            <h3>Ocean Breeze</h3>
+            <p class="price">$65</p>
+        </div>
+        <div class="details">
+            <p>Light fresh scent inspired by the sea.</p>
+            <div class="notes">
+                Top: Lemon<br>
+                Middle: Marine<br>
+                Base: Musk
+            </div>
+            <button onclick="addToCart('Ocean Breeze', 65)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="nocturne.jpeg">
+
+        <div class="card-content">
+            <h3>Nocturne Essence</h3>
+            <p class="price">$120</p>
+        </div>
+
+        <div class="details">
+            <p>Dark luxurious fragrance crafted for night elegance and bold presence.</p>
+
+            <div class="notes">
+                Top: Black Pepper<br>
+                Middle: Leather<br>
+                Base: Oud & Vanilla
+            </div>
+
+            <button onclick="addToCart('Nocturne Essence', 120)">Add to Cart</button>
+        </div>
+    </div>
+
+</section>
+
+    <footer id="footer">
+            <div id="fleft">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                     <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.tiktok.com/explore" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+            <div id="fcenter">
+                <p>© 2026 SCENTRA. All Rights Reserved.</p>
+            </div>
+            <div id="fright">
+                <a href="https://maps.google.com"><P><i class="fa-solid fa-location-dot"></i> Egypt ,cairo ,towndown</P></a>
+                <a href="https://mail.google.com"><p><i class="fa-solid fa-envelope"></i> SENTRA@gmail.com</p></a>
+                <p id="tele"> <i class="fa-solid fa-phone"></i>+20 01058976431</p>
+            </div>
+        </footer>
+<script src="Js.js"></script>
+</body>
+</html>

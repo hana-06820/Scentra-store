@@ -1,0 +1,249 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(78, 33, 11);
+    background-color: #f7f4ee;
+    padding-top: 120px;
+}
+
+#header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e6dfd2;
+    color: rgb(78, 33, 11);
+    margin-bottom: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hlist ul {
+    display: flex;
+    gap: 20px;
+    background-color: #e6dfd2;
+    margin-left: 50px;
+}
+
+.hlist ul li{
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    color: rgb(78, 33, 11);
+}
+
+.hlist a{
+    text-decoration: none;
+    color:rgb(78, 33, 11);
+}
+
+.hlist a:hover{
+    color:rgb(132, 98, 81);
+}
+
+#hright {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(78, 33, 11);
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 180px;
+    background-color: #e6dfd2;
+}
+
+.search button {
+    border: none;
+    background-color: rgb(78, 33, 11);
+    color: #e6dfd2;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+.search button:hover {
+    background-color: rgb(132, 98, 81);
+}
+
+#hright i{
+    margin: 15px;
+    color: rgb(78, 33, 11);
+}
+
+#hright i:hover{
+    color:rgb(132, 98, 81);
+}
+
+#image img{
+    width :100%;
+    height: 350px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#image p{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(78, 33, 11);
+    background-color: rgba(255, 255, 255, 0.2);; /* text background color */
+    backdrop-filter: blur(10px);/*blur text background */
+    width: 400px;
+    height: 60px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 30px 50px;
+}
+
+#image h2{ /*About us*/
+    text-align: center;
+    color: rgb(78, 33, 11);
+    margin: 20px;
+    font-size: 35px;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+#content img{
+    float: left;
+    width: 35%;
+    height:650px;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+}
+
+#text p,h2,h3{
+    color: rgb(78, 33, 11);
+}
+
+/* #about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    margin-left: 25px;
+}     */
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.topleft, .topright {
+  width: 45%;
+  text-align: center;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bottomleft ,.bottomright{
+    width: 45%;
+    text-align: center;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #e6dfd2;
+    color: rgb(78, 33, 11);
+}
+
+#footer p{
+    background-color: #e6dfd2;
+}
+
+#fleft{
+    display: flex;
+    gap: 15px;
+    background-color: #e6dfd2;
+}
+
+#fleft i{
+    font-size: 30px;
+    color: rgb(78, 33, 11);
+    background-color: #e6dfd2;
+}
+
+#fleft i:hover{
+    color:rgb(137, 103, 86)  ;
+}
+
+
+#fcenter{
+    text-align: center;
+    background-color: #e6dfd2;
+}
+
+#fright{
+    text-align: center;
+    background-color: #e6dfd2;
+}
+
+#fright p:hover,i:hover{
+    color:rgb(137, 103, 86);
+}
+
+#fright a{
+    text-decoration: none;
+    color: rgb(78, 33, 11);
+    background-color: #e6dfd2;
+}
+
+#tele{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
